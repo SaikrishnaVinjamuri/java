@@ -7,7 +7,6 @@ public class Experiment_8 {
     static String password ;
 
     public static void userData(){
-        //int count = 0 ;
         String regex = "[A-Z a-z _ 0-9]+";
         Scanner sai = new Scanner(System.in);
 
@@ -16,7 +15,6 @@ public class Experiment_8 {
         if(userName.length()>0) {
             if(userName.matches(regex)) {
                 System.out.println("Valid User Name");
-                //count++;
             }
             else
                 System.out.println("Invalid User Name Please re enter");
@@ -30,7 +28,6 @@ public class Experiment_8 {
         if(emailId.length()>10) {
             if(emailId.matches(regex2)) {
                 System.out.println("Valid emailId");
-                //count++;
             }
             else
                 System.out.println("Invalid emailId Please re enter");
@@ -41,12 +38,9 @@ public class Experiment_8 {
         System.out.println("Enter Your Mobile Number");
         mobileNumber = sai.next();
         String regex3 = "[0-9]+";
-        /*String s = mobileNumber.toString();
-        int count = s.length();*/
         if(mobileNumber.length()==10){
             if(mobileNumber.matches(regex3)){
                 System.out.println("vaild Number");
-                //count++;
             }
             else
                 System.out.println("Invalid Number");
@@ -63,7 +57,6 @@ public class Experiment_8 {
         if(password.length()>8) {
             if(password.matches(regex4)) {
                 System.out.println("Valid password");
-                //count++;
             }
             else
                 System.out.println("Invalid password Please re enter");
@@ -71,10 +64,6 @@ public class Experiment_8 {
         else
             System.out.println("password should have atleast 8 character ");
 
-        /*if(count!=4)
-            System.out.println("please re-enter invalid data");
-        else
-            System.out.println("Thank you");*/
     }
 
     public static void main(String []args){
